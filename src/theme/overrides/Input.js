@@ -10,6 +10,7 @@ export default function Input(theme) {
           },
         },
         input: {
+          color: '#1DA1F2',
           '&::placeholder': {
             opacity: 1,
             color: theme.palette.text.disabled,
