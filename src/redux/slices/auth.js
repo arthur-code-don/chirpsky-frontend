@@ -209,7 +209,7 @@ export function RegisterUser(formValues) {
       })
       .finally(() => {
         if (!getState().auth.error) {
-          window.location.href = "https://chirpsky-server.onrender.com/auth/verify";
+          window.location.href = "/auth/verify";
         }
       });
   };
