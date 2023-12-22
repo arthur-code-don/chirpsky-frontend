@@ -62,7 +62,7 @@ export function getFileFormat(fileUrl) {
 
 const getIcon = (name) => (
   <Image
-    src={`https://chirpskykite/assets/icons/file/${name}.svg`}
+    src={`https://chirpskykite-server.onrender.com/assets/icons/file/${name}.svg`}
     alt={name}
     sx={{ width: 28, height: 28 }}
   />
