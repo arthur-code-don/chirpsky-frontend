@@ -26,7 +26,7 @@ const ProfileMenu = () => {
   const user_id = window.localStorage.getItem("user_id");
 
   const user_name = user?.firstName;
-  const user_img = `http://localhost:3001/${user?.avatar}`;
+  const user_img = `https://chirpskykite-server.onrender.com/${user?.avatar}`;
 
   return (
     <>

@@ -56,9 +56,9 @@ const CallHistoryElement = ({ img, name, incoming, missed, online, id }) => {
               anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               variant="dot"
             >
-               <Avatar alt={name} src={`http://localhost:3001/${img}`} />
+               <Avatar alt={name} src={`https://chirpskykite-server.onrender.com/${img}`} />
             </StyledBadge>
-              : <Avatar alt={name} src={`http://localhost:3001/${img}`} />}
+              : <Avatar alt={name} src={`https://chirpskykite-server.onrender.com/${img}`} />}
 
             <Stack spacing={0.3}>
             <Typography variant="subtitle2">{name}</Typography>

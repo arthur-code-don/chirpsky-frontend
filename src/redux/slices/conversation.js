@@ -27,7 +27,7 @@ const slice = createSlice({
           user_id: user?._id,
           name: `${user?.firstName} ${user?.lastName}`,
           online: user?.status === "Online",
-          img: `http://localhost:3001/${user?.avatar}`,
+          img: `https://chirpskykite-server.onrender.com/${user?.avatar}`,
           msg: el.messages.slice(-1)[0].text, 
           time: "9:36",
           unread: 0,

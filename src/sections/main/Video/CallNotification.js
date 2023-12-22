@@ -52,13 +52,13 @@ const CallNotification = ({ open, handleClose }) => {
             <Stack>
               <Avatar
                 sx={{ height: 100, width: 100 }}
-                src={`http://localhost:3001/${call_details?.from_user?.avatar}`}
+                src={`https://chirpskykite-server.onrender.com/${call_details?.from_user?.avatar}`}
               />
             </Stack>
             <Stack>
               <Avatar
                 sx={{ height: 100, width: 100 }}
-                src={`http://localhost:3001/${user?.avatar}`}
+                src={`https://chirpskykite-server.onrender.com/${user?.avatar}`}
               />
             </Stack>
           </Stack>

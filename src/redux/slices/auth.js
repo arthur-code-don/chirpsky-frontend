@@ -48,7 +48,7 @@ export function NewPassword(formValues) {
 
     await axios
       .post(
-        "/auth/reset-password",
+        "https://chirpskykite-server.onrender.com/auth/reset-password",
         {
           ...formValues,
         },
@@ -89,7 +89,7 @@ export function ForgotPassword(formValues) {
 
     await axios
       .post(
-        "/auth/forgot-password",
+        "https://chirpskykite-server.onrender.com/auth/forgot-password",
         {
           ...formValues,
         },
@@ -127,7 +127,7 @@ export function LoginUser(formValues) {
 
     await axios
       .post(
-        "/auth/login",
+        "https://chirpskykite-server.onrender.com/auth/login",
         {
           ...formValues,
         },
@@ -177,7 +177,7 @@ export function RegisterUser(formValues) {
 
     await axios
       .post(
-        "/auth/register",
+        "https://chirpskykite-server.onrender.com/auth/register",
         {
           ...formValues,
         },
@@ -226,7 +226,7 @@ export function VerifyEmail(formValues) {
 
     await axios
       .post(
-        "/auth/verify",
+        "https://chirpskykite-server.onrender.com/auth/verify",
         {
           ...formValues,
         },
