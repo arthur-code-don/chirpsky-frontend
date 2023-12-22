@@ -58,7 +58,7 @@ export const StartAudioCall = (id) => {
     dispatch(slice.actions.resetAudioCallQueue());
     axios
       .post(
-        "https://chirpskykite-server.onrender.com/user/start-audio-call",
+        "https://chirpsky-server.onrender.com/user/start-audio-call",
         { id },
         {
           headers: {

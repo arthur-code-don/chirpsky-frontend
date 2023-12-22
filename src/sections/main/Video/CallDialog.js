@@ -129,7 +129,7 @@ const CallDialog = ({ open, handleClose }) => {
     async function fetchToken() {
       // You can await here
       const response = await axiosInstance.post(
-        "https://chirpskykite-server.onrender.com/user/generate-zego-token",
+        "https://chirpsky-server.onrender.com/user/generate-zego-token",
         {
           userId: userID,
           room_id: roomID,

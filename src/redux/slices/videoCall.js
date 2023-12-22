@@ -58,7 +58,7 @@ export const StartVideoCall = (id) => {
     dispatch(slice.actions.resetVideoCallQueue());
     axios
       .post(
-        "https://chirpskykite-server.onrender.com/user/start-video-call",
+        "https://chirpsky-server.onrender.com/user/start-video-call",
         { id },
         {
           headers: {

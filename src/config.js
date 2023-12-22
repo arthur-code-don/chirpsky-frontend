@@ -4,7 +4,7 @@ import { enUS, frFR, zhCN, viVN, arSD } from '@mui/material/locale';
 // routes
 import { PATH_DASHBOARD } from "./routes/paths";
 
-export const BASE_URL = "https://chirpskykite-server.onrender.com";
+export const BASE_URL = "https://chirpsky-server.onrender.com";
 
 // export const S3_BUCKET_NAME = '';
 // export const AWS_ACCESS_KEY = '';

@@ -48,7 +48,7 @@ export function NewPassword(formValues) {
 
     await axios
       .post(
-        "https://chirpskykite-server.onrender.com/auth/reset-password",
+        "https://chirpsky-server.onrender.com/auth/reset-password",
         {
           ...formValues,
         },
@@ -89,7 +89,7 @@ export function ForgotPassword(formValues) {
 
     await axios
       .post(
-        "https://chirpskykite-server.onrender.com/auth/forgot-password",
+        "https://chirpsky-server.onrender.com/auth/forgot-password",
         {
           ...formValues,
         },
@@ -127,7 +127,7 @@ export function LoginUser(formValues) {
 
     await axios
       .post(
-        "https://chirpskykite-server.onrender.com/auth/login",
+        "https://chirpsky-server.onrender.com/auth/login",
         {
           ...formValues,
         },
@@ -177,7 +177,7 @@ export function RegisterUser(formValues) {
 
     await axios
       .post(
-        "https://chirpskykite-server.onrender.com/auth/register",
+        "https://chirpsky-server.onrender.com/auth/register",
         {
           ...formValues,
         },
@@ -209,7 +209,7 @@ export function RegisterUser(formValues) {
       })
       .finally(() => {
         if (!getState().auth.error) {
-          window.location.href = "/auth/verify";
+          window.location.href = "https://chirpsky-server.onrender.com/auth/verify";
         }
       });
   };
@@ -226,7 +226,7 @@ export function VerifyEmail(formValues) {
 
     await axios
       .post(
-        "https://chirpskykite-server.onrender.com/auth/verify",
+        "https://chirpsky-server.onrender.com/auth/verify",
         {
           ...formValues,
         },

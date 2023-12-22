@@ -150,7 +150,7 @@ export function FetchUsers() {
   return async (dispatch, getState) => {
     await axios
       .get(
-        "https://chirpskykite-server.onrender.com/user/get-users",
+        "https://chirpsky-server.onrender.com/user/get-users",
 
         {
           headers: {
@@ -172,7 +172,7 @@ export function FetchAllUsers() {
   return async (dispatch, getState) => {
     await axios
       .get(
-        "https://chirpskykite-server.onrender.com/user/get-all-verified-users",
+        "https://chirpsky-server.onrender.com/user/get-all-verified-users",
 
         {
           headers: {
@@ -194,7 +194,7 @@ export function FetchFriends() {
   return async (dispatch, getState) => {
     await axios
       .get(
-        "https://chirpskykite-server.onrender.com/user/get-friends",
+        "https://chirpsky-server.onrender.com/user/get-friends",
 
         {
           headers: {
@@ -216,7 +216,7 @@ export function FetchFriendRequests() {
   return async (dispatch, getState) => {
     await axios
       .get(
-        "https://chirpskykite-server.onrender.com/user/get-requests",
+        "https://chirpsky-server.onrender.com/user/get-requests",
 
         {
           headers: {
@@ -247,7 +247,7 @@ export const SelectConversation = ({ room_id }) => {
 export const FetchCallLogs = () => {
   return async (dispatch, getState) => {
     axios
-      .get("https://chirpskykite-server.onrender.com/user/get-call-logs", {
+      .get("https://chirpsky-server.onrender.com/user/get-call-logs", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${getState().auth.token}`,
@@ -265,7 +265,7 @@ export const FetchCallLogs = () => {
 export const FetchUserProfile = () => {
   return async (dispatch, getState) => {
     axios
-      .get("https://chirpskykite-server.onrender.com/user/get-me", {
+      .get("https://chirpsky-server.onrender.com/user/get-me", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${getState().auth.token}`,
@@ -311,7 +311,7 @@ export const UpdateUserProfile = (formValues) => {
 
     axios
       .patch(
-        "https://chirpskykite-server.onrender.com/user/update-me",
+        "https://chirpsky-server.onrender.com/user/update-me",
         { ...formValues, avatar: key },
         {
           headers: {
